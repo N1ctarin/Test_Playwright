@@ -17,6 +17,19 @@ class LoginPage:
     def click_login_button(self):
         self.page.click(LoginPageLocator.LOGIN_BUTTON)
 
+    def enter_otp_1(self):
+        self.page.fill(LoginPageLocator.OTP_1, '0')
+
+    def enter_otp_2(self):
+        self.page.focus(LoginPageLocator.OTP_2)
+        self.page.press(LoginPageLocator.OTP_2)
+
+    def enter_otp_3(self):
+        self.page.fill(LoginPageLocator.OTP_3, "0")
+
+    def enter_otp_4(self):
+        self.page.fill(LoginPageLocator.OTP_4, "0")
+
     def is_check_success(self):
         return self.page.is_visible(LoginPageLocator.LOCATOR_EKF)
 
