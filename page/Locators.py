@@ -14,3 +14,4 @@ class MainPageLocator:
     NAME_NEW_PROJECT = 'input[name="title"]'
     DESCRIPTION_NEW_PROJECT = 'textarea[name="description"]'
     SAVE_NEW_PROJECT_BUTTON = 'button[type="submit"]'
+    DELETE_BUTTON = 'button[type="submit"]'
