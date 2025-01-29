@@ -1,6 +1,5 @@
 from playwright.sync_api import Page
 from page.Locators import MainPageLocator
-from page.json_page import DateForTesting
 
 class MainPage:
     def __init__(self, page: Page):

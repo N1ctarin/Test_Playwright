@@ -5,7 +5,7 @@ from page.json_page import CreduForWatchdog
 from page.Main_page import MainPage
 import pytest
 
-class TestSmokeSuite:
+class TestSuite:
         def test_login_in_stage(self, browser):
                 link = "https://ekf-connect-industry.stage.iot.ekfgroup.com/auth"
                 login_page = LoginPage(browser)
