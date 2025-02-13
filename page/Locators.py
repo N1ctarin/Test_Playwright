@@ -15,3 +15,6 @@ class MainPageLocator:
     DESCRIPTION_NEW_PROJECT = 'textarea[name="description"]'
     SAVE_NEW_PROJECT_BUTTON = 'button[type="submit"]'
     DELETE_BUTTON = 'button[type="submit"]'
+
+class DevicesPageLocator:
+    FOLDER_PROJECT_TAGS = '._plate_1tm1c_24'

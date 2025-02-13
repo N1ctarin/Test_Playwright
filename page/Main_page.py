@@ -1,3 +1,5 @@
+from time import sleep
+
 from playwright.sync_api import Page
 from page.Locators import MainPageLocator
 
@@ -24,10 +26,11 @@ class MainPage:
         self.page.click(f'text={name}')
 
     def click_settings_in_project(self):
-        self.page.wait_for_timeout(1)
+        self.page.wait_for_selector('text="Настройки"', timeout=3000)
         self.page.click('text="Настройки"')
 
     def click_delete_project(self):
+        self.page.wait_for_selector('text=" Удалить проект"', timeout=3000)
         self.page.click('text=" Удалить проект"')
         self.page.click(MainPageLocator.DELETE_BUTTON)
         self.page.bring_to_front()
